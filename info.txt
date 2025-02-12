@@ -1,0 +1,18 @@
+pip install virtualenv
+
+# env
+python -m venv selenium-python
+
+# activate the env
+.\selenium-python\Scripts\activate
+
+#pip install selenium
+#pip install pytest
+
+#file should start with *_test.pytest
+#file should end with test_*.py
+
+# command to run test 
+# pytest
+# pytest -v (all files)
+# pytest login_test.py -v (only 1 particular file)
