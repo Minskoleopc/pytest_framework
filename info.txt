@@ -16,3 +16,14 @@ python -m venv selenium-python
 # pytest
 # pytest -v (all files)
 # pytest login_test.py -v (only 1 particular file)
+
+pytest -m smoke
+pytest -m regression
+
+
+#json
+#xml
+#csv 
+#excel
+#connect
+#single testcase with multiple set of data
