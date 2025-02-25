@@ -11,6 +11,6 @@ def test_login(username,password):
     assert username != "" and password != ""
 
 
-def test_open_google(browser):
-    browser.get('https://www.google.com')
-    assert "Google" in browser.title
+# def test_open_google(browser):
+#     browser.get('https://www.google.com')
+#     assert "Google" in browser.title

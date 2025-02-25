@@ -1,0 +1,13 @@
+import json 
+import pytest
+
+def read_json_data():
+    with open("test_data.json") as f:
+        data = json.load()
+    return [(item['username'],item['password'])for item in data]
+
+
+@pytest.mark.parametrize("username, password",read_json_data())
+def test_login_csv(username, password):
+    print(f"Testing login with {username} and {password}")
+    assert username != "" and password != ""
